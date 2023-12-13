@@ -4,14 +4,14 @@
 		"prefix": "import flutter",
 		"scope": "dart",
 		"body": [
-			"import 'import 'dart:async';"
+			"import 'package:flutter/material.dart';"
 		]
 	},
 	"import async": {
 		"prefix": "import async",
 		"scope": "dart",
 		"body": [
-			"import 'package:flutter/material.dart';"
+			"import 'import 'dart:async';"
 		]
 	},
 

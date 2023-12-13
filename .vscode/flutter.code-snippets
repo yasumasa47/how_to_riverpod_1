@@ -20,7 +20,9 @@
 		"prefix": "main",
 		"scope": "dart",
 		"body": [
+			"main(){"
 			"void main() => runApp(const ProviderScope(child: MyApp()));"
+			"}"
 		]
 	},
 }

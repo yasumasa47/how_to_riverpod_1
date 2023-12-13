@@ -1,16 +1,6 @@
 # how_to_riverpod
 
-A new Flutter project.
+RiverPodを使用した基本的な状態管理の方法です。
+説明は、下記記事を参考にしてください。
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+https://zenn.dev/yasumasa_orcate/articles/fafe2a4b8e84b8

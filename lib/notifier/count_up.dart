@@ -1,5 +1,3 @@
-// TODO notifireを完成させる => コマンド打つ必要あり
-
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 part 'count_up.g.dart';

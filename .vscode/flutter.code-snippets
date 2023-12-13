@@ -1,0 +1,28 @@
+{
+//import
+	"import flutter": {
+		"prefix": "import flutter",
+		"scope": "dart",
+		"body": [
+			"import 'import 'dart:async';"
+		]
+	},
+	"import async": {
+		"prefix": "import async",
+		"scope": "dart",
+		"body": [
+			"import 'package:flutter/material.dart';"
+		]
+	},
+
+//main
+	"main": {
+		"prefix": "main",
+		"scope": "dart",
+		"body": [
+			"void main() => runApp(const ProviderScope(child: MyApp()));"
+		]
+	},
+}
+
+

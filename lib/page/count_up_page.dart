@@ -10,7 +10,7 @@ class CountUp extends StatelessWidget {
       appBar: AppBar(
         title: const Text('HOW TO RIVERPOD 1'),
       ),
-      body: CountUpWidet(),
+      body: const Center(child: CountUpWidet()),
     );
   }
 }

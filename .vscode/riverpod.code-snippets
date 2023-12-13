@@ -1,0 +1,100 @@
+{
+    //import
+    "import flutter_riverpod": {
+        "prefix": "import flutter_riverpod",
+        "scope": "dart",
+        "body": [
+            "import 'package:flutter_riverpod/flutter_riverpod.dart';"
+        ]
+    },
+	"import riverpod_annotation": {
+        "prefix": "import riverpod_annotation",
+        "scope": "dart",
+        "body": [
+            "import 'package:riverpod_annotation/riverpod_annotation.dart';"
+        ]
+    },
+    
+    //consumerWidget
+    "consumer": {
+        "prefix": "consumer",
+        "scope": "dart",
+        "body": [
+            "class $1 extends ConsumerWidget {",
+            "  const $1({super.key});",
+            ""
+            "  @override",
+            "  Widget build(BuildContext context, WidgetRef ref) {",
+            "    return Container();",
+            "  }",
+            "}"
+            ]
+        },
+
+    //notifire
+    "notifire": {
+		"prefix": "notifire",
+		"scope": "dart",
+		"body": [
+			"part '$TM_FILENAME_BASE.g.dart';"
+			"@riverpod"
+			"class $1Notifier extends _$$1Notifier {"
+			"	@override"
+			"	int build() {"
+			"		return 0;"
+			"	}"
+			""
+			"	void updateState() {"
+			"		final oldState = state;"
+			"		final newState = oldState + 1;"
+			"		state = newState;"
+			"	}"
+			"}"
+			""
+			"/**"
+			" * 作成されたプロバイダーは先頭小文字で自動で名前がつく"
+			" * 例:S1Notifire >> s1NotifireProvider"
+			" *"
+			" * riverpod_generaterを使うには、プロジェクトのディレクトリで下記コマンドを実行。",
+			" * flutter pub run build_runner build --delete-conflicting-outputs"
+			" *"
+			" */"
+		]
+	},
+	//ref
+	"ref.wath": {
+		"prefix": "ref.wath",
+		"scope": "dart",
+		"body": [
+			"//wathの()内は***NotifireProvider"
+			"final xxx = ref.watch($1NotifireProvider);"
+		]
+	},
+	"ref.listen": {
+		"prefix": "ref.listen",
+		"scope": "dart",
+		"body": [
+			"//listen(,内は***NotifireProvider。SnackBar部分は自分の好きなものに変更"
+			"ref.listen($1NotifireProvider,"
+			"	(oldState, newState) {"
+			"		ScaffoldMessenger.of(context).showSnackBar("
+			"			SnackBar("
+			"				content: Text('$$oldState から $$newState に変更されました。'),"
+            "				duration: Duration(milliseconds: 200),"
+			"			),"
+			"		);"
+			"	},"
+			");"
+		]
+	},
+	"ref.read": {
+		"prefix": "ref.read",
+		"scope": "dart",
+		"body": [
+			"//read()内は***NotifireProvider.notifire"
+			"final notifire = ref.read($1NotifireProvider.notifier);"
+			"notifire.updateState();"
+		]
+	},
+
+    }
